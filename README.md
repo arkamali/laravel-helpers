@@ -70,6 +70,33 @@ if (!function_exists('hello')) {
 }
 ```
 
+## Available functions
+
+> New functions are always adding. Feel free to contribute.
+
+### Strings
+
+#### `str_lower()`
+
+Convert string to lowercase, assuming it's using the `UTF-8` encoding:
+
+```php
+$lower = str_lower('TeSt');
+
+// test
+```
+
+#### `str_upper()`
+
+Convert string to uppercase, assuming it's using the `UTF-8` encoding:
+
+```php
+$upper = str_upper('TeSt');
+
+// TEST
+```
+
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
