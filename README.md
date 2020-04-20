@@ -107,7 +107,7 @@ filter_input($value);
 
 #### `phone()`
 
-phone formatter:
+phone formatter (iran mobile and home phone numbers):
 
 ```php
 phone($phone);
@@ -129,10 +129,10 @@ $image = image('/images/test.jpg');
 
 #### `gravatar()`
 
-provides gravatar avatar
+provides gravatar image (if your app use laravel auth, when run function with null value, function try to catch user email with auth()->user()->email):
 
 ```php
-$image = gravatar('email@gmail.com');
+$gravatar = gravatar('email@gmail.com');
 
 ```
 
