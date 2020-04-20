@@ -74,6 +74,68 @@ if (!function_exists('hello')) {
 
 > New functions are always adding. Feel free to contribute.
 
+### Formatter
+
+#### `get_excerpt()`
+
+get excerpt of text:
+
+```php
+get_excerpt($text, $maxChars = null, $suffix = '...', $br = true, $clean_html = true);
+
+```
+
+#### `format_bytes()`
+
+Format bytes into kilobytes, megabytes, gigabytes or terabytes:
+
+```php
+format_bytes($bytes, $precision = 2);
+
+```
+
+
+#### `filter_input()`
+
+remove html tags from input:
+
+```php
+filter_input($value);
+
+```
+
+
+#### `phone()`
+
+phone formatter:
+
+```php
+phone($phone);
+
+```
+
+### Image
+
+#### `image()`
+
+provides default image if empty:
+
+```php
+$image = image('/images/test.jpg');
+
+// /images/test.jpg
+
+```
+
+#### `gravatar()`
+
+provides gravatar avatar
+
+```php
+$image = gravatar('email@gmail.com');
+
+```
+
 ### Strings
 
 #### `str_lower()`
